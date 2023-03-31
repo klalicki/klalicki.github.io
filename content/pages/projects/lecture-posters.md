@@ -16,4 +16,4 @@ eleventyNavigation:
 
 ![Two posters for art lectures](/img/project-lectureposters/poster3.jpg)
 
-I designed these posters for the New Paltz Student Art Alliance, an organization that (among other things) hosted weekly visiting artists & designers. These posters were printed and displayed around campus to promote upcoming events. Each poster was designed to incorporate elements from the individual artist's work.
+I was asked to design these posters for the New Paltz Student Art Alliance, an organization that (among other things) hosted weekly visiting artists & designers. These posters were printed and displayed around campus to promote upcoming events. Each poster was designed to incorporate elements from the individual artist's work.
