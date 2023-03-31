@@ -8,16 +8,29 @@ eleventyNavigation:
 
 # About{.page-title}
 
-## About Me
+Hi! I'm a designer & developer based out of Kingston, New York. I grew up just across the river in Red Hook, NY (the Dutchess County town, not the Brooklyn neighborhood), and I have a BFA in Graphic Design from SUNY New Paltz. If I'm not making things, I'm probably outside, hiking, roller skating or riding my bike.
 
-### some stuff about me
+# Contact {.page-title}
 
+Interested in working with me?
 
+Just wanna say hi?
 
-Hi there! My name is _Name_, and I'm a graphic designer with a passion for creating beautiful and effective designs. As a recent graduate with a Bachelor's degree in Graphic Design, I have spent the past few years honing my skills and developing my expertise in the field. I am excited to use my skills to help businesses and individuals communicate their message through effective visual design.
+Feel free to drop me a line at
 
-When I'm not working on design projects, you can find me exploring new hiking trails or trying out new recipes in the kitchen. As an avid outdoor enthusiast, I love spending time in nature and find that it's a great way to recharge my creativity. I also enjoy attending local art exhibitions and music concerts, as I find that these experiences often inspire my design work and keep me up-to-date with the latest trends in the industry. Additionally, I have a passion for photography and love capturing the world around me through my lens. All of these hobbies and interests feed into my design work, and I believe that they help me to approach each project with a unique perspective and creative edge.
+hello@kristofflalicki.com
 
-# Contact{.page-title}
+# Colophon {.page-title}
 
-Hey there! I'm excited to connect with you and chat about your design project. Whether you already have a clear vision in mind or need some help bringing your ideas to life, I'm here to help. Let's schedule a consultation to discuss your project in more detail and explore creative solutions together. If you have any questions or just want to chat about design, feel free to shoot me an email or give me a call.
+This site is built with [11ty](https://www.11ty.dev/), a static site generator that runs in [Node.js](https://nodejs.org/en). This site was originally created during a workshop I organized at SUNY New Paltz's 2023 Design Week, where I introduced students to the power and flexibility of static-site generators.
+
+## tools & libraries
+
+The following tools and libraries were used to build and deploy this site
+
+- [11ty](https://www.11ty.dev/)
+- [GitHub Codespaces](https://github.com/codespaces) for a dev environment
+- [GitHub Pages](https://pages.github.com/) for hosting
+- [GitHub Actions](https://support.github.com/features/actions) for a custom build/deploy workflow
+- [Webpack](https://webpack.js.org/)
+- [barba.js](https://barba.js.org/)
