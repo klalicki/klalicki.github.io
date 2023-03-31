@@ -12,7 +12,7 @@ eleventyNavigation:
 
 ## Introduction
 
-For my graphic design senior thesis project, I designed a print publication for a nonprofit organization called "Green Earth." The project aimed to create a visually appealing and informative brochure that would help the organization in its fundraising and awareness-raising efforts.
+For my graphic design senior thesis project, I designed a print publication for a nonprofit organization called "Green Earth." The project aimed to create a visually appealing and informative brochure that would help the organization in its fundraising and awareness-raising efforts. {#introduction-special}
 
 ## Type of Publication
 

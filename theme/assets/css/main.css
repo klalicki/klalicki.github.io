@@ -1,5 +1,6 @@
 /* font imports here */
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400;1,600&family=IBM+Plex+Serif:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&display=swap");
 *,
 *::before,
 *::after {
@@ -34,8 +35,8 @@ body {
 /* This line sets the default font for most text, including the body text, navigation, and the smaller headers (h4-h6) */
 /* This line sets the font for larger headers (h1-h3), including the site title*/
 :root {
-  font-size: 110%;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 120%;
+  font-family: "DM Sans", sans-serif;
 }
 
 img {
@@ -50,19 +51,19 @@ main {
 }
 
 html {
-  background-color: white;
+  background-color: rgb(60, 57, 111);
 }
 
 h1 {
-  font-size: 2.744rem;
+  font-size: 2.197rem;
 }
 
 h2 {
-  font-size: 1.96rem;
+  font-size: 1.69rem;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 h4,
@@ -75,12 +76,12 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "IBM Plex Serif", serif;
+  font-family: "DM Serif Display", serif;
 }
 
 h5,
 h6 {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 h1,
@@ -94,20 +95,20 @@ h6 {
   margin-top: 0.75em;
   margin-bottom: 0.5em;
   display: block;
-  max-width: 50rem;
+  max-width: 30rem;
 }
 
 p {
   line-height: 1.6;
   margin-bottom: 0.75em;
-  max-width: 50rem;
+  max-width: 30rem;
 }
 p > img {
   width: 100%;
 }
 
 main hr {
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid white;
   border-top: none;
 }
 main h1,
@@ -116,13 +117,13 @@ main h3,
 main h4,
 main h5,
 main h6 {
-  color: black;
+  color: rgb(255, 190, 243);
 }
 main * {
-  color: black;
+  color: white;
 }
 main a {
-  color: blue;
+  color: rgb(255, 78, 78);
 }
 main ul li,
 main ol li {
@@ -142,14 +143,14 @@ body {
 }
 
 .main-nav-container {
-  width: clamp(250px, 30%, 500px);
+  width: clamp(300px, 30%, 600px);
   position: fixed;
-  background-color: #c0c0c0;
+  background-color: rgb(12, 0, 77);
   height: 100%;
   padding: 1rem;
   z-index: 10;
   transition: all 0.5s;
-  color: black;
+  color: rgb(207, 229, 254);
 }
 
 .site-masthead {
@@ -158,20 +159,20 @@ body {
   padding-bottom: 1rem;
 }
 .site-masthead a {
-  color: black;
+  color: rgb(207, 229, 254);
   text-decoration: none;
 }
 .site-masthead h3 {
   margin-top: 0;
-  font-size: 1.4rem;
+  font-size: 3.2rem;
 }
 .site-masthead p {
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .sidebar-rule {
-  border-bottom: 2px solid black;
+  border-bottom: 5px solid white;
 }
 
 .btn-toggle-menu {
@@ -179,20 +180,20 @@ body {
 }
 
 .active {
-  background-color: white;
+  background-color: rgb(157, 1, 255);
   transition: background-color 0.2s;
 }
 
 .nav-list-item {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .nav-list-item-has-children ul {
-  padding-left: 1em;
+  padding-left: 0em;
 }
 
 .nav-list-item-has-children .nav-list-item {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .sidebar-nav-link-section {
@@ -201,7 +202,7 @@ body {
   padding-inline-start: 0;
 }
 .sidebar-nav-link-section * {
-  color: black;
+  color: rgb(207, 229, 254);
   text-decoration: none;
 }
 .sidebar-nav-link-section a {
@@ -210,7 +211,7 @@ body {
   transition: background-color 0.2s;
 }
 .sidebar-nav-link-section a:hover {
-  background-color: white;
+  background-color: rgb(157, 1, 255);
 }
 
 main {
@@ -218,7 +219,7 @@ main {
   position: absolute;
   left: 0;
   right: 0;
-  padding-left: clamp(250px, 30%, 500px);
+  padding-left: clamp(300px, 30%, 600px);
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-right: 0;
@@ -244,7 +245,7 @@ article > * {
   padding-left: 1rem;
   padding-right: 1rem;
   width: 100%;
-  max-width: 50rem;
+  max-width: 30rem;
   flex-shrink: 0;
 }
 
@@ -267,19 +268,19 @@ pre {
   position: relative;
   padding: 1rem;
   text-decoration: none;
-  color: black;
+  color: white;
   display: block;
 }
 .portfolio-card-tile * {
   display: block;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .portfolio-card-tile h2 {
   font-size: 1.25rem;
 }
 .portfolio-card-tile:hover, .portfolio-card-tile:focus, .portfolio-card-tile:active {
-  background-color: lightgreen;
+  background-color: rgb(31, 0, 66);
 }
 
 p.portfolio-card-desc-short {
@@ -287,7 +288,7 @@ p.portfolio-card-desc-short {
 }
 
 .portfolio-card-desc-med {
-  font-size: 0.7142857143rem;
+  font-size: 0.7692307692rem;
 }
 
 .portfolio-card-tile-contents {
@@ -303,8 +304,8 @@ p.portfolio-card-desc-short {
 .portfolio-tile-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(max(450px, 33.3333333333%), 1fr));
-  padding: 0px;
-  gap: 0px 0px;
+  padding: 50px;
+  gap: 50px 50px;
 }
 
 .portfolio-tile {
@@ -317,7 +318,7 @@ p.portfolio-card-desc-short {
 }
 
 .portfolio-tile-project-desc-short {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .portfolio-tile-project-desc-med {
@@ -337,7 +338,7 @@ p.portfolio-card-desc-short {
   right: 1rem;
   bottom: 1rem;
   opacity: 0;
-  background-color: white;
+  background-color: rgb(35, 0, 99);
   transform: scale(90%);
   transition: all 0.5s;
   text-decoration: none;
@@ -349,7 +350,7 @@ p.portfolio-card-desc-short {
   margin-bottom: 0;
 }
 .portfolio-tile-text-overlay * {
-  color: black;
+  color: white;
 }
 
 .portfolio-tile:focus .portfolio-tile-text-overlay,
@@ -362,7 +363,7 @@ p.portfolio-card-desc-short {
 
 /* wide (UX) portfolio layout */
 .portfolio-wide-tile a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -380,7 +381,7 @@ p.portfolio-card-desc-short {
 }
 
 .portfolio-wide-text-sm {
-  font-size: 0.7142857143rem;
+  font-size: 0.7692307692rem;
 }
 
 .portfolio-wide-text-md {
@@ -398,11 +399,11 @@ p.portfolio-card-desc-short {
 .portfolio-wide-cta-link.portfolio-wide-cta-link {
   margin-top: 0.5em;
   display: inline-block;
-  font-size: 0.7142857143rem;
+  font-size: 0.7692307692rem;
   padding: 0.75em;
   background-color: transparent;
-  border: 2px solid rgb(255, 123, 0);
-  color: rgb(255, 123, 0);
+  border: 2px solid rgb(255, 158, 68);
+  color: rgb(255, 158, 68);
   border-radius: 0.25em;
   width: auto;
   text-transform: uppercase;
@@ -411,8 +412,8 @@ p.portfolio-card-desc-short {
   transition: all 0.2s;
 }
 .portfolio-wide-cta-link.portfolio-wide-cta-link:hover {
-  background-color: rgb(255, 123, 0);
-  color: white;
+  background-color: rgb(255, 158, 68);
+  color: rgb(60, 57, 111);
   transition: all 0.2s;
 }
 
@@ -473,13 +474,13 @@ html {
     padding-bottom: 1rem;
   }
   .sidebar-nav-link-section a {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
   .main-nav {
     transform: none;
-    background-color: #c0c0c0;
+    background-color: rgb(12, 0, 77);
     opacity: 1;
     width: 100vw;
     transition: all 0.3s;
@@ -525,10 +526,10 @@ html {
   .btn-toggle-menu svg {
     height: 100%;
     width: 100%;
-    fill: black;
+    fill: rgb(207, 229, 254);
   }
   .btn-toggle-menu:hover {
-    background-color: white;
+    background-color: rgb(157, 1, 255);
   }
   .site-masthead {
     z-index: 10;
@@ -536,15 +537,15 @@ html {
     height: 3rem;
     display: flex;
     padding: 0 0.5rem;
-    border-bottom: 0px solid black;
+    border-bottom: 4px solid red;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #c0c0c0;
+    background-color: rgb(12, 0, 77);
   }
   .site-masthead h3 {
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .site-masthead p {
     display: none;
@@ -556,7 +557,7 @@ html {
   }
 }
 .page-title {
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid white;
   padding-bottom: 1rem;
 }
 
@@ -572,8 +573,8 @@ pre {
 }
 
 .component-inline-nav {
-  max-width: 50rem;
-  border-top: 2px solid black;
+  max-width: 30rem;
+  border-top: 4px solid white;
   padding-top: 1rem;
   margin-top: 2rem;
 }
@@ -590,12 +591,12 @@ pre {
 }
 .component-inline-nav .sibling-navigation a,
 .component-inline-nav .sibling-navigation a:visited {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .component-inline-nav .sibling-navigation a:hover,
 .component-inline-nav .sibling-navigation a:focus {
-  background-color: lightpink;
+  background-color: rgb(35, 0, 99);
 }
 .component-inline-nav .sibling-navigation > :first-child {
   text-align: left;
@@ -622,6 +623,6 @@ pre {
 }
 
 .custom-width-150 {
-  max-width: min(100%, 75rem);
+  max-width: min(100%, 45rem);
   padding: 0;
 }

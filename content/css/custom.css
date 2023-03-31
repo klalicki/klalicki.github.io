@@ -9,3 +9,6 @@ You can also use !important to override the default CSS, but try to avoid that w
 https://dev.to/alvaromontoro/using-important-in-css-75c
 
 */
+#introduction-special {
+  background-color: black;
+}

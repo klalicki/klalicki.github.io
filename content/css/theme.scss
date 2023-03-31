@@ -8,18 +8,19 @@
 //copy and paste these from Google Fonts, Adobe Fonts, etc.
 // you only need to copy the '@import' line; if the code has <style> tags, delete them.
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400;1,600&family=IBM+Plex+Serif:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&display=swap");
 
 /* This line sets the default font for most text, including the body text, navigation, and the smaller headers (h4-h6) */
 // You can copy this from Google Fonts as well - this will be the 'font-family' value;
-$theme-font-stack-main: "IBM Plex Sans", sans-serif;
+$theme-font-stack-main: "DM Sans", sans-serif;
 
 /* This line sets the font for larger headers (h1-h3), including the site title*/
 // You can copy this from Google Fonts as well - this will be the 'font-family' value;
-$theme-font-stack-headers: "IBM Plex Serif", serif;
+$theme-font-stack-headers: "DM Serif Display", serif;
 
 // This line sets the base font size for desktop
 // default is 110%
-$font-size-base: 110%;
+$font-size-base: 120%;
 
 // This line sets the base font size for mobile
 // default is 100%
@@ -30,7 +31,7 @@ $font-size-mobile: 100%;
 // Setting this to 1 will make all fonts on the website the same size.
 // I would suggest a value between 1.2 and 1.5
 // default is 1.41
-$font-size-scale-factor: 1.4;
+$font-size-scale-factor: 1.3;
 
 // This section sets up the default typography scale for the website.
 // Feel free to customize these values. if you want, but note that once you change these,
@@ -65,57 +66,57 @@ $sidebar-width: 30%;
 
 // These two lines control the minimum and maximum width of the sidebar if you have it set in percentage.
 // The default min-width is 250px and the default max-width is 500px.
-$sidebar-min-width: 250px;
-$sidebar-max-width: 500px;
+$sidebar-min-width: 300px;
+$sidebar-max-width: 600px;
 
 // This sets the size of the site title in the masthead (typically your name)
 // default value is 1.4rem
-$font-size-nav-masthead: 1.4rem;
+$font-size-nav-masthead: 3.2rem;
 
 // This sets the size of the line below the site title (default is 'Graphic Designer')
 // default value is 1rem
-$font-size-nav-submasthead: 1rem;
+$font-size-nav-submasthead: 1.2rem;
 
 // This sets the size of 'pages' in the sidebar, such as 'About', 'Contact', your portfolio homepage, etc.
 // default value is 1rem
-$font-size-nav-pages: 1rem;
+$font-size-nav-pages: 2rem;
 
 //This sets the size of projects in the sidebar
 // default value is 1rem
-$font-size-nav-projects: 1rem;
+$font-size-nav-projects: 1.4rem;
 
 // This sets the indent amount for project pages in the sidebar.
 // Set this to 0 to remove the indent.
 // default value is 1em
-$nav-project-indent: 1em;
+$nav-project-indent: 0em;
 
 // This line sets the background color for the sidebar area, and for the top bar on mobile
 // default is a light gray (#c0c0c0)
-$color-sidebar-background: #c0c0c0;
+$color-sidebar-background: rgb(12, 0, 77);
 
 // This line sets the text color for the sidebar area, and for the top bar on mobile
 // default is black
-$color-sidebar-text: black;
+$color-sidebar-text: rgb(207, 229, 254);
 
 //This line sets the color of the sidebar highlight (shown on the current page);
 // default is white
-$color-sidebar-highlight: white;
+$color-sidebar-highlight: rgb(157, 1, 255);
 
 //this sets the color of the rule on the sidebar (shown between the masthead and the pages)
 //default is black;
-$color-sidebar-rule: black;
+$color-sidebar-rule: white;
 
 // this sets the weight of the rule on the sidebar;
 // default is 2px
-$weight-sidebar-rule: 2px;
+$weight-sidebar-rule: 5px;
 
 // This sets the color of the bottom border on the top nav bar on mobile
 // default is black
-$color-top-nav-border: black;
+$color-top-nav-border: red;
 
 // This sets the thickness of the bottom border on the top nav bar on mobile
 // default is 0px
-$weight-top-nav-border: 0px;
+$weight-top-nav-border: 4px;
 
 // This sets the height of the nav bar on mobile devices.
 // If you choose a large font size for the mobile nav, you may need to increase this value.
@@ -127,50 +128,50 @@ $nav-height-mobile: 3rem;
 
 // This line sets the width of the main text column.
 // Default is 50rem
-$main-col-width: 50rem;
+$main-col-width: 30rem;
 
 // This line sets the background color for the entire page
 // default is white
-$color-page-background: white;
+$color-page-background: rgb(60, 57, 111);
 
 // This line sets the main text color for the page
 // default is black
-$color-text-primary: black;
+$color-text-primary: white;
 
 //This line sets the text color for header elements
 // default is black
-$color-text-headers: black;
+$color-text-headers: rgb(255, 190, 243);
 
 // This line sets the color of borders and rules on the page
 // Set this to transparent to get rid of them entirely
 // default is black
-$color-borders: black;
+$color-borders: white;
 
 //This line sets the width of borders on the main page area
-$border-width: 2px;
+$border-width: 4px;
 
 // This color is used for all 'regular' links in a page.
 // Default is blue
-$color-text-link: blue;
+$color-text-link: rgb(255, 78, 78);
 
 // This color is used for the 'previous/next project' component in the footer of a project page.
 // This color is used as a background color on hover
-$color-next-project-hover: lightpink;
+$color-next-project-hover: rgb(35, 0, 99);
 
 // Portfolio 'Tile' Layout
 // This is the layout that uses image tiles, with a hover effect that shows the title of the project.
 
 // This line sets the hover color for the 'tile' portfolio layout
 //default is white
-$color-tile-overlay: white;
+$color-tile-overlay: rgb(35, 0, 99);
 
 //this line sets the text color for the overlays on the tile layout
 //default is black
-$color-tile-overlay-text: black;
+$color-tile-overlay-text: white;
 
 // This line sets the gap between tiles
 // default is 0px
-$portfolio-tile-gap: 0px;
+$portfolio-tile-gap: 50px;
 
 // This line sets the maximum number of tiles allowed in one line
 // default is 3
@@ -181,7 +182,7 @@ $portfolio-tile-max-columns: 3;
 
 // This line sets the hover color for the 'card' portfolio layout
 // default is lightgreen
-$color-portfolio-card-highlight: lightgreen;
+$color-portfolio-card-highlight: rgb(31, 0, 66);
 
 //This is the minimum width of a card in the 'card' portfolio layout.
 // default is 400px
@@ -191,4 +192,4 @@ $min-card-width: 400px;
 
 //this sets the color for the CTA button on the wide portfolio layout.
 //defualt is orange
-$portfolio-wide-cta-color: rgb(255, 123, 0);
+$portfolio-wide-cta-color: rgb(255, 158, 68);
