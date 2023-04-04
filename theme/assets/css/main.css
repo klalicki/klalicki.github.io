@@ -362,8 +362,12 @@ p.portfolio-card-desc-short {
 }
 
 /* wide (UX) portfolio layout */
+<<<<<<< HEAD
 .portfolio-wide-tile a {
  
+=======
+.portfolio-wide-tile > a {
+>>>>>>> b2581ec (adds a >> character and slight transition to 'wide' layout)
   color: black;
   text-decoration: none;
   cursor: pointer;
