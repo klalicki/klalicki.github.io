@@ -363,7 +363,7 @@ p.portfolio-card-desc-short {
 
 /* wide (UX) portfolio layout */
 .portfolio-wide-tile > a {
-  color: white;
+  color: black;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s;
@@ -631,4 +631,9 @@ pre {
 .custom-width-150 {
   max-width: min(100%, 45rem);
   padding: 0;
+}
+
+.eleventy-plugin-youtube-embed {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
