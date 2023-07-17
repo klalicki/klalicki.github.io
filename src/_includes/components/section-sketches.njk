@@ -1,0 +1,22 @@
+{# code to implement sketches section (ideally pulling repos from GitHub) goes in this component#}
+
+<div class="sketch-list">
+{% for project in sketchData.filteredProjects %}
+  <article class="sketch-card">
+    <div class="sketch-text-section">
+ <h3>{{ project.name }}</h3>
+    <p>{{ project.description }}</p>
+    </div>
+   
+    <div class="sketch-button-section">
+    
+<a  href="{{project.html_url}}"><i class="fa-brands fa-github"></i><span class="sr-hidden">View {{project.name}} source on </span>GitHub</a>
+   {% if project.homepage %}
+     <a  href="{{ project.homepage }}" target="_blank"><i class="fa-solid fa-globe"></i>View <span class="sr-hidden">{{project.name}}</span> Sketch</a>
+   
+   {% endif %}
+    </div>
+    
+  </article>
+{% endfor %}
+</div>

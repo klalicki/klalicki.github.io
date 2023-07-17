@@ -1,0 +1,30 @@
+ {%- for project in collections.project | orderSort -%}
+        <article class="project">
+          <h2>{% if project.data.a11yTitle%}
+            <span aria-hidden="true">{{project.data.title}}</span><span class="sr-hidden">{{project.data.a11yTitle}} </span>
+            {%else%}
+            {{project.data.title}}
+            {%endif%}
+          </h2>
+
+          <img src="{{project.data.img}}" alt="{{project.data.title}}" />
+          <p>{{project.content | safe}}</p>
+          <h3 class="sr-hidden">List of technologies used in {{project.data.title}}</h3>
+          <ul class="tech-list">
+            {%- for techItem in project.data.techs -%}
+            <li>{{techItem}}</li>
+            {%- endfor -%}
+          </ul>
+          <div class="button-bar">
+            {% for button in project.data.buttons %}
+            <a href="{{button.url}}" class="btn">
+              {% if button.icon %}
+              <i class="{{button.icon}}"></i>
+              {% endif %} <span aria-hidden="true">{{button.title}}</span><span class="sr-hidden">{% if button.a11yTitle%}{{button.a11yTitle}}{% else %}{{button.title}}{%endif%}
+              </span>
+            </a>
+
+            {% endfor %}
+          </div>
+        </article>
+        {%- endfor -%}

@@ -1,0 +1,30 @@
+{
+  "name": "kristofflalicki.dev",
+  "version": "1.0.0",
+  "description": "portfolio site",
+  "main": "color-themer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:scripts": "webpack --mode=production --node-env=production",
+    "build": "npx @11ty/eleventy",
+    "watch:scripts": "webpack --watch",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@webpack-cli/generators": "^3.0.1",
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.76.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@11ty/eleventy-fetch": "^4.0.0",
+    "colord": "^2.9.3",
+    "two.js": "^0.8.10"
+  }
+}

@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=DM+Serif+Display&display=swap");
+:root {
+  font-size: 22px;
+  /* define initial light theme and dark theme */
+  --theme-dk-fg: rgb(247, 247, 248);
+  --theme-dk-bg: rgb(28, 33, 33);
+  --theme-dk-bg-alt: rgb(51, 61, 61);
+  --theme-dk-accent-a: rgb(45, 229, 235);
+  --theme-dk-accent-b: rgb(235, 45, 232);
+  --theme-dk-accent-a-soft: rgb(28, 137, 141);
+  --theme-dk-accent-b-soft: rgb(141, 28, 139);
+
+  --theme-lt-fg: rgb(15, 16, 16);
+  --theme-lt-bg: rgb(234, 238, 241);
+  --theme-lt-bg-alt: rgb(203, 214, 220);
+  --theme-lt-accent-b: rgb(34, 179, 252);
+  --theme-lt-accent-a: rgb(252, 34, 219);
+  --theme-lt-accent-b-soft: rgb(170, 222, 249);
+  --theme-lt-accent-a-soft: rgb(249, 170, 237);
+  /* default to light theme */
+  --color-bg: var(--theme-lt-bg);
+  --color-bg-alt: var(--theme-lt-bg-alt);
+  --color-fg: var(--theme-lt-fg);
+  --color-accent-a: var(--theme-lt-accent-a);
+  --color-accent-b: var(--theme-lt-accent-b);
+  --color-accent-a-soft: var(--theme-lt-accent-a-soft);
+  --color-accent-b-soft: var(--theme-lt-accent-b-soft);
+  --font-main: "DM Sans", sans-serif;
+  --font-headline: "DM Serif Display", serif;
+  --page-border-width: 1rem;
+  --standard-gradient: -webkit-linear-gradient(
+    left,
+    var(--color-accent-a),
+    var(--color-accent-b)
+  );
+  --standard-gradient-soft: -webkit-linear-gradient(
+    left,
+    var(--color-accent-a-soft),
+    var(--color-accent-b-soft)
+  );
+  transition: all 0.2s;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* use dark mode colors */
+    --browser-color-mode: "dark";
+    --color-bg: var(--theme-dk-bg);
+    --color-bg-alt: var(--theme-dk-bg-alt);
+    --color-fg: var(--theme-dk-fg);
+    --color-accent-a: var(--theme-dk-accent-a);
+    --color-accent-b: var(--theme-dk-accent-b);
+    --color-accent-a-soft: var(--theme-dk-accent-a-soft);
+    --color-accent-b-soft: var(--theme-dk-accent-b-soft);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--font-main);
+  /* transition: all 0.8s; */
+}
+
+h1,
+h1 span {
+  font-weight: normal;
+  font-family: var(--font-headline);
+}
+h2 {
+  font-weight: normal;
+}
+p {
+  line-height: 1.75;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+span.highlight {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  transition: all 0.1s;
+}
+span.highlight::after {
+  z-index: -1;
+  background: var(--standard-gradient-soft);
+
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s;
+}
+span.highlight:hover::after {
+  top: 40%;
+  bottom: 10%;
+  transition: all 0.3s;
+}
+.outer-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  background: var(--standard-gradient);
+}
+main {
+  background-color: var(--color-bg);
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1rem;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: stretch;
+}
+section {
+  position: relative;
+  max-width: 1024px;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  z-index: 10;
+}
+section.section-work,
+section.section-about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.section-work img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+section.splash-section {
+  /* min-height: 100vh; */
+  display: flex;
+  position: relative;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0rem;
+  /* align-self: stretch; */
+}
+.splash-content {
+  /* align-self: center; */
+  /* justify-self: center; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 95vh;
+  justify-content: center;
+  z-index: 10;
+}
+.rule-above::before {
+  content: "";
+  position: absolute;
+  background: var(--standard-gradient);
+  top: 0rem;
+  height: 0.5rem;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+.rule-above {
+  padding-top: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h1,
+h2,
+h3,
+p,
+li {
+  color: var(--color-fg);
+}
+a,
+a:visited {
+  color: var(--color-accent-b);
+}
+h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+h2 {
+  font-size: 1.66rem;
+}
+.splash-section h1,
+.splash-section h2 {
+  align-self: flex-start;
+  max-width: 100%;
+  hyphens: none;
+  /* display: inline-block; */
+}
+ul.tech-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.5rem;
+  padding: 0;
+}
+.tech-list li {
+  padding: 0.75em 1.25em;
+  background-color: var(--color-bg);
+  border-radius: 0.25em;
+}
+a.btn {
+  text-decoration: none;
+}
+article.project {
+  background-color: var(--color-bg-alt);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+button,
+a.btn {
+  color: var(--color-fg);
+  background: none;
+
+  transition: all 0.2s;
+  border-radius: 0.5rem;
+  align-self: flex-end;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  box-sizing: content-box;
+  border: 2px solid transparent;
+  overflow: visible;
+}
+
+/* fancy button hover styling
+ */
+button:hover,
+.btn:hover {
+  transition: all 0.2s;
+}
+button::after,
+.btn::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg);
+  left: 0;
+  top: 0;
+  border: 2px solid var(--color-fg);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+button::before,
+.btn::before {
+  content: "";
+  background: var(--standard-gradient);
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  border-radius: 0.5rem;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+button:hover::before,
+.btn:hover::before {
+  bottom: -10px;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+button,
+button *,
+a.btn,
+.btn * {
+  cursor: pointer;
+}
+
+i {
+  margin-right: 0.5em;
+}
+
+/* scrollybois */
+
+main {
+  /* Foreground, Background */
+  scrollbar-color: var(--color-accent-b) transparent;
+}
+main::-webkit-scrollbar {
+  width: 20px; /* Mostly for vertical scrollbars */
+}
+main::-webkit-scrollbar-thumb {
+  /* Foreground */
+  border-radius: 10px 0 0 10px;
+  background: var(--color-accent-b);
+}
+main::-webkit-scrollbar-track,
+main::-webkit-scrollbar-track-piece,
+main::-webkit-scrollbar-track-piece:start,
+main::-webkit-scrollbar-track-piece:end {
+  /* Background */
+
+  background-color: transparent;
+}
+
+.button-bar {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 0.75rem;
+  /* width: 100%; */
+}
+.button-bar button,
+.button-bar .btn {
+  padding: 0.5em 0.75em;
+  font-size: 1rem;
+}
+
+/* media query - make type smaller on small screens */
+@media screen and (max-width: 800px) {
+  article.project {
+    position: relative;
+    left: -1rem;
+    /* right: -1rem; */
+    width: calc(100% + 2rem);
+    border-radius: 0;
+  }
+  :root {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 2.25rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .outer-wrapper {
+    padding: 0.75rem;
+  }
+
+  /* unsets scrollbar on mobile to revert to default styling */
+  main::-webkit-scrollbar {
+    width: 0px;
+  }
+  .tech-list li {
+    padding: 0.25rem 0.5rem;
+  }
+}
+/* positioning the splash screen animation, regardless of which renderer is used */
+main > svg,
+main > canvas {
+  display: block;
+  position: fixed;
+  pointer-events: none;
+  align-self: center;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* sketch section
+<div class="sketch-list"></div>
+{% for project in sketchData.filteredProjects %}
+  <article class="sketch-card">
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.description }}</p>
+    <div class="sketch-button-section">
+<a href="{{project.html_url}}">GitHub</a>
+    <a href="{{ project.homepage }}" target="_blank">View Sketch</a>
+    </div>
+  </article> */
+.sketch-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.sketch-card {
+  background-color: var(--color-bg-alt);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.sketch-button-section {
+  align-self: flex-end;
+  display: flex;
+  gap: 1rem;
+}
+.sketch-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.sketch-card p {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+.sketch-button-section a {
+  font-size: 0.75rem;
+  padding: 0.375rem;
+  background-color: var(--color-accent-a-soft);
+  color: var(--color-fg);
+  text-decoration: none;
+  border-radius: 0.125rem;
+}
+.sketch-button-section a:hover {
+  background-color: var(--color-accent-a);
+  color: var(--color-bg);
+}
+
+/* special class for accessibility text that screen readers should see but sighted users do not need */
+.sr-hidden {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+/* 
+*[aria-hidden="true"] {
+
+} */
+
+@keyframes colorFade {
+  from {
+    outline-color: var(--color-accent-a);
+  }
+  to {
+    outline-color: var(--color-accent-b);
+  }
+}
+@keyframes spinny {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(-2.5deg);
+  }
+  95% {
+    transform: rotate(2.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+*:focus {
+  outline: 4px solid var(--color-accent-a);
+
+  /* animation: colorFade 3s ease-in-out infinite alternate; */
+  animation: spinny 2s reverse ease;
+}
