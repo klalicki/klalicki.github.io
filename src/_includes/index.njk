@@ -13,17 +13,7 @@
   <script src="https://kit.fontawesome.com/80e17ee37c.js" crossorigin="anonymous"></script>
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RSKL1ZL44M"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-RSKL1ZL44M");
-  </script>
 </head>
 
 <body>
@@ -57,15 +47,12 @@
      
       <section class="splash-section" id="p5-container">
         <div class="splash-content">
-          <h1>Howdy!🤠</h1>
-          <h1>
-            I'm <span class="highlight">Kristoff Lalicki</span>,<br />
-            and I like to make things!
-          </h1>
-          <h2>I'm a developer with a background in design.</h2>
+          <h1>Welcome to the playground!</h1>
+         
+          <h3>I use this domain to host various small projects on GitHub Pages. <br>If you're looking for my full website, you can find it at <a href="https://kristofflalicki.dev">kristofflalicki.dev</a></h3>
           {# <h3><span class="sr-hidden">displayed visually only</span><span aria-hidden="true">screen-reader only</span></h3> #}
 
-          <div class="button-bar">
+          {# <div class="button-bar">
             <a class="btn" href="https://github.com/klalicki"><i class="fa-brands fa-github"><span class="sr-hidden">View my profile on </span></i>GitHub</a>
 
             <button onclick="createNewTheme()">
@@ -74,28 +61,10 @@
             <button onclick="toggleColorMode()">
               <i class="fa-solid fa-circle-half-stroke"></i>toggle dark mode
             </button>
-          </div>
+          </div> #}
         </div>
       </section>
 
-      {% for section in collections.section | orderSort %}
-      {% if not (section.data.hide) %}
-        <section class="rule-above {{section.data.sectionClasses}}">
-        <h1>{{section.data.title}}</h1>
-        {{section.content | safe}}
-        {% if section.data.sectionType=="work" %}
-       {% include "components/section-work.njk" %}
-        {% endif %}
-        {% if section.data.sectionType=="sketches" %}
-       {% include "components/section-sketches.njk" %}
-        {% endif %}
-      </section>
-      {% endif %}
-      
-      {% endfor %}
-
-    </main>
-  </div>
 </body>
 
 <script defer src="scripts/main.js"></script>
